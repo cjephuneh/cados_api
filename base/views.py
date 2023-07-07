@@ -8,6 +8,7 @@ from django.db.models import Q
 
 # Create your views here.
 @api_view(['GET'])
+
 def endpoints(request):
     data = ['/advacates', 'advocate/:username']
     return Response(data)
